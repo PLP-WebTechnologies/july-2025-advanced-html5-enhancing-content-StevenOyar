@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML enhanced learning assignment">
+    <meta name="keywords" content="enhanced html">
+    <meta name="author" content="Steven Oyaro">
+    <title>Week 3 Enhanced Assignment</title>
+</head>
+
+<!-- Header section with main title and subtitle -->
+<header>
+    <h1>Enhanced HTML5 Content and Mastering Forms</h1>
+    <h2>Elevating my skills while working with contents and mastering creation</h2>
+</header>
+
+<!-- Main content of the page -->
+<body>
+    <!-- Navigation menu linking to different sections -->
+    <h3>Content Covered</h3>
+    <nav>
+        <!-- Unordered list with square bullets -->
+        <ul type="square">
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+        </ul>
+    </nav>
+
+    <!-- Lists section  -->
+    <section id="lists">
+        <h2>Lists</h2>
+        <h3>Types of Lists</h3>
+        <!-- Basic unordered list -->
+        <ul>
+            <li>Definition lists</li>
+            <li>Nested lists</li>
+        </ul>
+        
+        <!-- Definition list example -->
+        <h3>Definition Lists</h3>
+        <p>An example</p>
+        <dl>
+            <dt>KCSE</dt>
+            <dd>Kenya Certificate of Secondary Education</dd>
+            <dt>KCPE</dt>
+            <dd>Kenya Certificate of Primary Education</dd>
+            <dt>UON</dt>
+            <dd>University of Nairobi</dd>
+        </dl>
+        
+        <!-- Nested list example with multiple levels -->
+        <h3>Nested Lists</h3>
+        <p>This is a list that contains other list elements</p>
+        <ol>
+            <li>National exams
+                <ol type="i">
+                    <li>KCSE 
+                        <ol type="a">
+                            <li>Mathematics</li>
+                            <li>English</li>
+                            <li>Biology</li>
+                            <li>Chemistry</li>
+                            <li>Physics</li>
+                            <li>Business Studies</li>
+                        </ol>
+                    </li>
+                    <li>KCPE
+                        <ol type="a">
+                            <li>Mathematics</li>
+                            <li>Kiswahili</li>
+                            <li>Creative Arts</li>
+                            <li>Social Studies</li>
+                        </ol>
+                    </li>
+                    <li>CBC</li>
+                </ol>
+            </li>
+
+            <li>Universities in Kenya
+                <ol>
+                    <li>University of Nairobi</li>
+                    <li>Technical University of Kenya</li>
+                    <li>Moi University</li>
+                    <li>Kenyatta University</li>
+                </ol>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Media section demonstrating different media types -->
+    <section id="media">
+        <h2>Media</h2>
+        <ol>
+            <li>Images</li>
+            <li>Audio</li>
+            <li>Videos</li>
+        </ol>
+        <p>How to add images to HTML to make them visible</p>
+        
+        <!-- Image example -->
+        <h3>1. Images</h3>
+        <img src="https://images.pexels.com/photos/29248427/pexels-photo-29248427.jpeg" alt="Mustang car image" height="800" width="400">
+        
+        <!-- Audio example -->
+        <h3>2. Audio</h3>
+        <audio controls>
+            <source src="audioTest.mp3" type="audio testing">
+        </audio>
+        
+        <!-- Video example -->
+        <h3>3. Video</h3>
+        <video controls height="500" width="500">
+            <source src="https://videos.pexels.com/video-files/6291875/6291875-hd_1080_1920_30fps.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Tables section with customer data example -->
+    <section id="tables">
+        <h2>Tables</h2>
+        <h3>Creation of a Table</h3>
+        <table border="1">
+            <thead>Customer Data
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>County</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nala Mogoi</td>
+                    <td>34889</td>
+                    <td>5235 Kitale</td>
+                    <td>Kitale</td>
+                    <td>Trans Nzoia</td>
+                </tr>
+                <tr>
+                    <td>Steven Oyaro</td>
+                    <td>213756</td>
+                    <td>787 Nairobi</td>
+                    <td>Nairobi</td>
+                    <td>Nairobi</td>
+                </tr>
+                <tr>
+                    <td>Faith Chepngeno</td>
+                    <td>44782</td>
+                    <td>32 Kitengela</td>
+                    <td>Kitengela</td>
+                    <td>Kajiado</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Forms section with various input types -->
+    <section id="forms">
+        <h2>Forms</h2>
+        <form action="stvnoyaro@gmail.com" method="post">
+
+            <!-- Text input with placeholder and required attribute -->
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter name here" autocomplete="name" required>
+            <br><br>
+            
+            <!-- Email input -->
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+            <br><br>
+            
+            <!-- Password inputd with placehold and required attribute -->
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <br><br>
+            
+            <!-- Radio buttons for gender selection -->
+            <label for="gender">Gender: </label>
+            <input type="radio" id="Male" name="gender" value="Male">
+            <input type="radio" id="Female" name="gender" value="Female">
+            <br><br>
+            
+            <!-- Dropdown select for city -->
+            <label for="City">City: </label>
+            <select name="city" id="city">
+                <option value="">--Select City--</option>
+                <option value="Nairobi">Nairobi</option>
+                <option value="Kisumu">Kisumu</option>
+                <option value="Nakuru">Nakuru</option>
+                <option value="Eldoret">Eldoret</option>
+                <option value="Kisii">Kisii</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Konza">Konza</option>
+            </select>
+            <br><br>
+            
+            <!-- Dropdown select for county -->
+            <label for="county">County: </label>
+            <select name="county" id="county">
+                <option value="">--Select County--</option>
+                <option value="nairobi">Nairobi</option>
+                <option value="kisumu">Kisumu</option>
+                <option value="nakuru">Nakuru</option>
+                <option value="uasin gishu">Uasin Gishu</option>
+                <option value="kisii">Kisii</option>
+                <option value="machakos">Machakos</option>
+            </select>
+            <br><br>
+            
+            <!-- Readonly country field -->
+            <label for="country">Country: </label>
+            <input type="country" name="country" id="country" value="Kenya" readonly>
+            <br><br>
+            
+            <!-- Textarea for comments -->
+            <label for="comments">Comments: </label>
+            <textarea name="comments" id="comments" placeholder="Enter message" rows="5" cols="40"></textarea>
+            <br>
+            
+            <!-- Form submit button -->
+             <button>submit</button>
+        </form>
+    </section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Steven Oyaro</p>
+</footer>
+
+</html>
